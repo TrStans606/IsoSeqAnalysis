@@ -1,7 +1,15 @@
 # IsoSeqAnalysis
 Steps of my analysis used in IsoSeq 
 
-WT steps for the CPR1 gene:
+# HPC settings
+
+#SBATCH --time 48:00:00
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=12
+#SBATCH --mem=500GB
+
+# WT steps for the CPR1 gene:
 Step 1: Lima for primer removal
 
 ```lima m64146_230816_190133.hifi_reads.bam PacBioPrimers.fa movieX.fl.bam --isoseq --peek-guess```
